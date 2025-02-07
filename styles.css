@@ -1,0 +1,261 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff; /* White Background */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Black Background */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF851B; /* Orange Logo Color */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #FFFFFF; /* White Links */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF851B; /* Orange Hover Effect */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, #000000, #330033); /* Gradient from Black to Dark Purple */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF; /* White Text */
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #FF851B; /* Orange Button */
+  color: #000000; /* Black Text */
+}
+
+.btn-secondary {
+  background-color: #FFFFFF; /* White Button */
+  color: #FF851B; /* Orange Text */
+  border: 2px solid #FF851B; /* Orange Border */
+}
+
+.hero-buttons .btn:hover {
+  opacity: 0.9;
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+  background-color: #FFFFFF; /* White Background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #FF851B; /* Orange Border for Profile Picture */
+}
+
+.about-content {
+  text-align: center;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skills li {
+  background-color: #FF851B; /* Orange Skill Tags */
+  color: #000000; /* Black Text */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 60px 0;
+  background-color: #000000; /* Black Background */
+  color: #FFFFFF; /* White Text */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  background-color: rgba(51, 0, 51, 0.8); /* Dark Purple Overlay */
+  color: #FFFFFF; /* White Text */
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 0;
+  background-color: #FFFFFF; /* White Background */
+  color: #000000; /* Black Text */
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.service-list li {
+  background-color: #FF851B; /* Orange Service Tags */
+  color: #000000; /* Black Text */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+  background-color: #330033; /* Dark Purple Background */
+  text-align: center;
+  color: #FFFFFF; /* White Text */
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #FF851B; /* Orange Border */
+  border-radius: 5px;
+  background-color: #FFFFFF; /* White Input Background */
+  color: #000000; /* Black Input Text */
+}
+
+#contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF851B; /* Orange Button */
+  color: #000000; /* Black Text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #FFFFFF; /* White Hover */
+  color: #FF851B; /* Orange Text on Hover */
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background-color: #000000; /* Black Background */
+  color: #FFFFFF; /* White Text */
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #FF851B; /* Orange Links */
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #FFFFFF; /* White Hover */
+}
