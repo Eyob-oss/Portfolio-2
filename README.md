@@ -29,6 +29,7 @@
       <p class="hero-subtitle">Turning ideas into reality through creativity and innovation.</p>
       <div class="hero-buttons">
         <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <img src="profile.jpg" alt="Eyob Tesfaye" class="profile-pic">
         <a href="#contact" class="btn btn-secondary">Contact Me</a>
       </div>
     </div>
